@@ -5,14 +5,12 @@ function Slider({ images }) {
   const [autoSlide, setAutoSlide] = useState(true);
   const intervalRef = useRef(null);
 
-  // Function to start the auto-slide interval
   const startAutoSlide = () => {
     intervalRef.current = setInterval(() => {
       setCurrentIndex(prevIndex => (prevIndex + 1) % images.length);
-    }, 2000); // 2 seconds interval
+    }, 4000);
   };
 
-  // Function to reset the auto-slide timer
   const resetAutoSlide = () => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
@@ -27,7 +25,7 @@ function Slider({ images }) {
 
     return () => {
       if (intervalRef.current) {
-        clearInterval(intervalRef.current); // Cleanup the interval on component unmount
+        clearInterval(intervalRef.current);
       }
     };
   }, [autoSlide, images.length]);
@@ -67,7 +65,6 @@ function Slider({ images }) {
         ))}
       </div>
 
-      {/* Left Arrow */}
       <button
         onClick={goToPrevious}
         className='absolute top-1/2 left-0 transform -translate-y-1/2 text-gray-800 focus:outline-none text-3xl'
@@ -75,7 +72,6 @@ function Slider({ images }) {
         &lt;
       </button>
 
-      {/* Right Arrow */}
       <button
         onClick={goToNext}
         className='absolute top-1/2 right-0 transform -translate-y-1/2 text-gray-800 focus:outline-none text-3xl'
@@ -83,7 +79,6 @@ function Slider({ images }) {
         &gt;
       </button>
 
-      {/* Navigation Circles */}
       <div className='absolute bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2 pb-4'>
         {images.map((_, index) => (
           <button
