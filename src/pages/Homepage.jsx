@@ -24,7 +24,7 @@ function Homepage() {
             <span>Description: </span>
           </div>
         <div className="w-[70%] mt-[3%] mx-auto h-auto">
-          <div className="grid grid-cols-4 gap-10 justify-center items-center mx-auto">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-4 gap-10 justify-center items-center mx-auto">
             <Icons 
               bgColor="bg-rose-300"
               borderColor="border-rose-300"
@@ -49,7 +49,7 @@ function Homepage() {
               name="Food Safety"
               hoverBg="hover:bg-pink-500"
             />
-            <div className="col-span-1 gap-10"></div>
+            <div className="sm:col-span-2 lg:col-span-1 gap-10"></div>
             <Icons 
               bgColor="bg-pink-300"
               borderColor="border-pink-300"
