@@ -3,7 +3,7 @@ import React from 'react'
 function Macronutrients() {
   return (
     <>
-        <div id="macro" className='h-screen flex flex-col justify-center items-center sm:mt-10'>
+        <div id="macro" className='h-screen flex flex-col justify-center items-center sm:mt-5'>
             <div className='flex float-start p-3 rounded-2xl bg-yellow-200'>
                 <span className='text-xl font-bold'>Macronutrients</span>
             </div>
