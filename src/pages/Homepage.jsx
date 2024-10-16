@@ -28,8 +28,8 @@ function Homepage() {
         <div className="w-[100%] mt-[3%] h-auto flex justify-center items-center mb-5">
           <div className="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-4 gap-10 justify-center items-center mx-auto">
             <Icons 
-              bgColor="bg-rose-300"
-              borderColor="border-rose-300"
+              bgColor="bg-[#DE638A]"
+              borderColor="border-[#DE638A]"
               name="Macro"
               hoverBg="hover:bg-rose-500"
               pageId="macro"
@@ -61,8 +61,8 @@ function Homepage() {
               hoverBg="hover:bg-pink-500"
             />
             <Icons 
-              bgColor="bg-pink-300"
-              borderColor="border-pink-300"
+              bgColor="bg-[#F3D9E5]"
+              borderColor="border-[#F3D9E5]"
               name="Download Video"
               hoverBg="hover:bg-pink-500"
             />

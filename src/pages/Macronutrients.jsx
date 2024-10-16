@@ -17,8 +17,8 @@ function Macronutrients() {
                 DESCRIPTION
             </div>
             <div className='flex w-full justify-center items-center gap-10 mt-5'>
-                <button className='bg-rose-300 border-2 py-3 px-5 rounded-lg border-rose-300 hover:bg-rose-400'>PDF1</button>
-                <button className='bg-rose-300 border-2 py-3 px-5 rounded-lg border-rose-300 hover:bg-rose-400'>PDF1</button>
+                <button className='bg-[#DE638A] border-2 py-3 px-5 rounded-lg border-[#DE638A] hover:bg-rose-400'>PDF1</button>
+                <button className='bg-[#DE638A] border-2 py-3 px-5 rounded-lg border-[#DE638A] hover:bg-rose-400'>PDF1</button>
             </div>
         </div>
     </>
