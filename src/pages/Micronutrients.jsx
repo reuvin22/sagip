@@ -2,7 +2,7 @@ import React from 'react'
 
 function Micronutrients() {
   return (
-    <div id="micro" className='h-screen flex flex-col justify-center items-center sm:mt-5'>
+    <div id="micro" className='h-screen flex flex-col justify-center items-center'>
         <div className='flex float-start p-3 rounded-2xl bg-yellow-200'>
             <span className='text-xl font-bold'>Micronutrients</span>
         </div>
