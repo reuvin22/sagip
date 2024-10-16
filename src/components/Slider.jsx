@@ -46,7 +46,7 @@ function Slider({ images }) {
   };
 
   return (
-    <div className='relative w-[50%] h-72 overflow-hidden rounded-2xl mt-5'>
+    <div className='relative w-[50%] sm:w-full md:w-full h-72 overflow-hidden rounded-2xl mt-5'>
       <div
         className='absolute inset-0 flex transition-transform duration-1000 ease-in-out'
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}

@@ -15,7 +15,7 @@ function Homepage() {
 
   return (
     <>
-      <div className="grid">
+      <div className="grid sm:place-items-center md:place-items-center">
         <NavLinks />
         <div className='flex justify-center items-center sm:w-[80%] md:w-[80%]'>
           <Slider images={arrayImg} />
