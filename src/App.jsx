@@ -7,7 +7,9 @@ import Macronutrients from './pages/Macronutrients';
 function App() {
   return (
     <div className="bg-red-100 min-h-screen">
-      <NavLinks />
+      <NavLinks 
+        pageId="/"
+      />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/macro" element={<Macronutrients />} />

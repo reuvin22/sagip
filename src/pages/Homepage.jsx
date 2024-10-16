@@ -7,6 +7,7 @@ import DOH3 from '../assets/doh3.jpg';
 import Icons from '../components/Icons';
 import Macronutrients from './Macronutrients';
 import { Link } from 'react-router-dom';
+import Micronutrients from './Micronutrients';
 
 function Homepage() {
   const arrayImg = [
@@ -17,7 +18,7 @@ function Homepage() {
 
   return (
     <>
-      <div className="grid sm:place-items-center md:place-items-center">
+      <div id="/" className="grid sm:place-items-center md:place-items-center">
         <div className='flex justify-center items-center sm:w-[80%] md:w-[80%]'>
           <Slider images={arrayImg} />
         </div>
@@ -38,6 +39,7 @@ function Homepage() {
               borderColor="border-orange-300"
               name="Micro"
               hoverBg="hover:bg-orange-500"
+              pageId="micro"
             />
             <Icons 
               bgColor="bg-cyan-300"
@@ -68,6 +70,7 @@ function Homepage() {
         </div>
       </div>
       <Macronutrients />
+      <Micronutrients />
     </>
   );
 }
