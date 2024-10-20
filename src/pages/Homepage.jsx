@@ -7,12 +7,12 @@ import DOH3 from '../assets/doh3.jpg';
 import Icons from '../components/Icons';
 import Content from '../components/Content'
 import { lazy, Suspense } from 'react';
-import Icon1 from '../assets/icons/9.png'
-import Icon2 from '../assets/icons/10.png'
-import Icon3 from '../assets/icons/11.png'
-import Icon4 from '../assets/icons/12.png'
-import Icon5 from '../assets/icons/13.png'
-import Icon6 from '../assets/icons/14.png'
+import Icon1 from '../assets/icons/1.png'
+import Icon2 from '../assets/icons/2.png'
+import Icon3 from '../assets/icons/3.png'
+import Icon4 from '../assets/icons/4.png'
+import Icon5 from '../assets/icons/5.png'
+import Icon6 from '../assets/icons/6.png'
 function Homepage() {
   const arrayImg = [
     { img: DOH1, title: 'Title1' },
@@ -52,7 +52,7 @@ function Homepage() {
                 borderColor="border-[#DE638A]"
                 name="Nutri Recomm"
                 pageId="nutrirecomm"
-                image={Icon1}
+                image={Icon2}
               />
               <Icons 
                 bgColor="bg-[#F6A2BB]"
@@ -73,7 +73,7 @@ function Homepage() {
                 borderColor="border-[#F3D9E5]"
                 name="Download Video"
                 pageId="downloadables"
-                image={Icon2}
+                image={Icon1}
               />
             </div>
           </div>

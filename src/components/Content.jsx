@@ -1,5 +1,5 @@
 import React from 'react';
-
+import BGImage from '../assets/icons/7.png'
 function Macronutrients({title, description1, description2, video, id, pdfName}) {
   return (
     <>
