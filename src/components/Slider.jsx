@@ -71,7 +71,7 @@ function Slider({ images }) {
       >
         &lt;
       </button>
-
+      
       <button
         onClick={goToNext}
         className='absolute top-1/2 right-0 transform -translate-y-1/2 text-gray-800 focus:outline-none text-3xl'

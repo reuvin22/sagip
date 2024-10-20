@@ -5,10 +5,14 @@ import DOH1 from '../assets/doh1.jpg';
 import DOH2 from '../assets/doh2.jpg';
 import DOH3 from '../assets/doh3.jpg';
 import Icons from '../components/Icons';
-import Macronutrients from './Macronutrients';
-import { Link } from 'react-router-dom';
-import Micronutrients from './Micronutrients';
-
+import Content from '../components/Content'
+import { lazy, Suspense } from 'react';
+import Icon1 from '../assets/icons/9.png'
+import Icon2 from '../assets/icons/10.png'
+import Icon3 from '../assets/icons/11.png'
+import Icon4 from '../assets/icons/12.png'
+import Icon5 from '../assets/icons/13.png'
+import Icon6 from '../assets/icons/14.png'
 function Homepage() {
   const arrayImg = [
     { img: DOH1, title: 'Title1' },
@@ -16,61 +20,115 @@ function Homepage() {
     { img: DOH3, title: 'Title3' },
   ];
 
+  const icons = lazy(() => {
+    
+  })
   return (
     <>
-      <div id="/" className="grid sm:place-items-center md:place-items-center">
+      <div id="/" className="grid sm:place-items-center md:place-items-center mb-24">
         <div className='flex justify-center items-center sm:w-[80%] md:w-[80%]'>
           <Slider images={arrayImg} />
         </div>
         <div className="text-center my-4">
             <span>Description: </span>
           </div>
-        <div className="w-[100%] mt-[3%] h-auto flex justify-center items-center mb-5">
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-4 gap-10 justify-center items-center mx-auto">
-            <Icons 
-              bgColor="bg-[#DE638A]"
-              borderColor="border-[#DE638A]"
-              name="Macro"
-              hoverBg="hover:bg-rose-500"
-              pageId="macro"
-            />
-            <Icons 
-              bgColor="bg-orange-300"
-              borderColor="border-orange-300"
-              name="Micro"
-              hoverBg="hover:bg-orange-500"
-              pageId="micro"
-            />
-            <Icons 
-              bgColor="bg-cyan-300"
-              borderColor="border-cyan-300"
-              name="Nutri Recomm"
-              hoverBg="hover:bg-cyan-500"
-            />
-            <Icons 
-              bgColor="bg-pink-300"
-              borderColor="border-pink-300"
-              name="Food Safety"
-              hoverBg="hover:bg-pink-500"
-            />
-            <div className="sm:col-span-2 lg:col-span-1 gap-10"></div>
-            <Icons 
-              bgColor="bg-pink-300"
-              borderColor="border-pink-300"
-              name="Food Supplement"
-              hoverBg="hover:bg-pink-500"
-            />
-            <Icons 
-              bgColor="bg-[#F3D9E5]"
-              borderColor="border-[#F3D9E5]"
-              name="Download Video"
-              hoverBg="hover:bg-pink-500"
-            />
+            <div className="mt-5 grid grid-cols-3 sm:grid-cols-2 gap-x-24 gap-y-10 justify-center items-center mx-auto">
+              <Icons 
+                bgColor="bg-[#F6A2BB]"
+                borderColor="border-[#DE638A]"
+                name="Macro"
+                pageId="macro"
+                image={Icon5}
+              />
+              <Icons 
+                bgColor="bg-[#F6A2BB]"
+                borderColor="border-[#DE638A]"
+                name="Micro"
+                pageId="micro"
+                image={Icon4}
+              />
+              <Icons 
+                bgColor="bg-[#F6A2BB]"
+                borderColor="border-[#DE638A]"
+                name="Nutri Recomm"
+                pageId="nutrirecomm"
+                image={Icon1}
+              />
+              <Icons 
+                bgColor="bg-[#F6A2BB]"
+                borderColor="border-[#DE638A]"
+                name="Food Supplement"
+                pageId="foodsupplement"
+                image={Icon6}
+              />
+              <Icons 
+                bgColor="bg-[#F6A2BB]"
+                borderColor="border-[#DE638A]"
+                name="Food Safety" 
+                pageId="foodsafety"
+                image={Icon3}
+              />
+              <Icons 
+                bgColor="bg-[#F3D9E5]"
+                borderColor="border-[#F3D9E5]"
+                name="Download Video"
+                pageId="downloadables"
+                image={Icon2}
+              />
+            </div>
           </div>
-        </div>
-      </div>
-      <Macronutrients />
-      <Micronutrients />
+      <Content 
+        title="Macronutrients"
+        description1="DESCRIPTION"
+        description2="DESCRIPTION"
+        pdfName="MACRO"
+        id="macro"
+      />
+      <Content 
+        title="Micronutrients"
+        description1="DESCRIPTION"
+        description2="DESCRIPTION"
+        pdf1="Pdf1"
+        pdf2="Pdf2"
+        pdfName="MICRO"
+        id="micro"
+      />
+      <Content 
+        title="Nutri Recomm"
+        description1="DESCRIPTION"
+        description2="DESCRIPTION"
+        pdf1="Pdf1"
+        pdf2="Pdf2"
+        pdfName="NUTRI RECOMM"
+        id="nutrirecomm"
+      />
+      <Content 
+        title="Food Supplement"
+        description1="DESCRIPTION"
+        description2="DESCRIPTION"
+        pdf1="Pdf1"
+        pdf2="Pdf2"
+        pdfName="FOOD SUPPLEMENT"
+        id="foodsupplement"
+      />
+      <Content 
+        title="Food Safety"
+        description1="DESCRIPTION"
+        description2="DESCRIPTION"
+        pdf1="Pdf1"
+        pdf2="Pdf2"
+        pdfName="FOOD SAFETY"
+        id="foodsafety"
+      />
+      <Content 
+        title="Downloadables"
+        description1="DESCRIPTION"
+        description2="DESCRIPTION"
+        pdf1="Pdf1"
+        pdf2="Pdf2"
+        pdfName="DOWNLOADABLES"
+        id="downloadables"
+      />
     </>
   );
 }

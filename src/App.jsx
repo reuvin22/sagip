@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import NavLinks from './components/NavLinks';
-import Macronutrients from './pages/Macronutrients';
+import Macronutrients from './components/Content';
 
 function App() {
   return (
